@@ -1,0 +1,552 @@
+/*estilos globais*/
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Assistant';
+}
+
+/*estilos compartilhados*/
+
+section {
+    padding: 15px;
+}
+
+.descricao {
+    margin: 20px auto;
+    width: 50%;
+    text-align: center;
+}
+
+.descricao h2 {
+    margin: 20px;
+}
+
+/*estilos topo*/
+
+.topo {
+    background-color: #419c9c;
+}
+
+.topo .espacamento-topo {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topo nav a {
+    margin: 10px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.topo nav a:hover {
+    color: #266f81;
+}
+
+/*estilos corpo*/
+.banner-corpo {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    background-image: url("../img/recepcao.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-corpo .slogan-banner-corpo {
+    color: white;
+    padding-left: 150px;
+}
+
+.sobre {
+    margin: 0 auto;
+}
+
+.descricao-sobre h2 {
+    margin-bottom: 20px;
+}
+
+.beneficios-sobre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.lista-beneficios-sobre ul {
+    margin: 20px 0 0 50px;
+}
+
+.cards-especialidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-especialidades figure {
+    margin: 15px;
+    text-align: center;
+    box-shadow: 10px 0 8px #909090;
+}
+
+.cards-especialidades figure img {
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+.cards-especialidades figure figcaption {
+    margin-bottom: 10px;
+}
+
+.horarios-especialidades {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.horarios-especialidades a {
+    background-color: #419c9c;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.horarios-especialidades a:hover {
+    background-color: #266f81;
+}
+
+.iframe-contato iframe {
+    width: 80%;
+    height: 400px;
+}
+
+.iframe-contato {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/*estilos rodapé*/
+.rodape {
+    background-color: #266f81;
+    margin-top: 50px;
+}
+
+.rodape .logo-rodape .dados-rodape {
+    color: #ffffff;
+    background-color: #266f81;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.rodape .logo-rodape .dados-rodape p {
+    margin: 5px;
+}
+
+/*@media queries*/
+
+@media (max-width: 425px) {
+
+    h1 {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .descricao {
+        margin: 20px auto;
+        text-align: center;
+        width: 90%;
+    }
+
+    .topo .espacamento-topo {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .topo .espacamento-topo .linha {
+        width: 80%;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #cccccc;
+    }
+
+    .topo nav {
+        padding-bottom: 10px;
+    }
+
+    .topo nav a {
+        font-size: 15px;
+    }
+
+    .banner-corpo {
+        width: 100%;
+        height: 200px;
+    }
+
+    .banner-corpo .slogan-banner-corpo {
+        padding-left: 50px;
+    }
+
+    .beneficios-sobre img {
+        display: none;
+    }
+
+    .lista-beneficios-sobre p {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .lista-beneficios-sobre ul {
+        margin-left: 20px;
+    }
+
+    .cards-especialidades {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .cards-especialidades figure {
+        margin: 15px;
+        box-shadow: 10px 0 8px #909090;
+    }
+
+    .cards-especialidades figure img {
+        width: 200px;
+        margin-bottom: 10px;
+    }
+
+    .cards-especialidades figure figcaption {
+        margin-bottom: 10px;
+    }
+
+    .contato .descricao p {
+        margin: 20px;
+    }
+
+    .iframe-contato iframe {
+        width: 300px;
+        height: 200px;
+    }
+
+    .rodape .logo-rodape .dados-rodape img {
+        width: 100px;
+    }
+
+    .rodape .logo-rodape .dados-rodape p {
+        font-size: 10px;
+    }
+
+    .rodape .logo-rodape .dados-rodape {
+        line-height: 20px;
+    }
+
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    h1 {
+        font-size: 25px;
+        margin-left: 10px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .descricao {
+        margin: 20px auto;
+        text-align: center;
+        width: 90%;
+    }
+
+    .topo .espacamento-topo {
+        width: 80%;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .topo .espacamento-topo .logo-topo a img {
+        width: 120px;
+    }
+
+    .topo nav {
+        padding-bottom: 8px;
+    }
+
+    .topo nav a {
+        font-size: 14px;
+    }
+
+    .banner-corpo {
+        width: 100%;
+        height: 350px;
+    }
+
+    .banner-corpo .slogan-banner-corpo {
+        padding-left: 50px;
+    }
+
+    .beneficios-sobre img {
+        display: none;
+    }
+
+    .lista-beneficios-sobre p {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .lista-beneficios-sobre ul {
+        margin-left: 20px;
+    }
+
+    .lista-beneficios-sobre ul li {
+        font-size: 22px;
+    }
+
+    .cards-especialidades {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .cards-especialidades figure {
+        margin: 15px;
+        box-shadow: 10px 0 8px #909090;
+    }
+
+    .cards-especialidades figure img {
+        width: 300px;
+        margin-bottom: 10px;
+    }
+
+    .cards-especialidades figure figcaption {
+        margin-bottom: 10px;
+    }
+
+    .contato .descricao p {
+        margin: 20px;
+    }
+
+    .rodape .logo-rodape .dados-rodape img {
+        width: 100px;
+    }
+
+    .rodape .logo-rodape .dados-rodape p {
+        font-size: 12px;
+    }
+
+    .rodape .logo-rodape .dados-rodape {
+        line-height: 30px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    h1 {
+        font-size: 40px;
+        margin-left: 10px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 25px;
+    }
+
+    .descricao {
+        margin: 20px auto;
+        text-align: center;
+        width: 90%;
+    }
+
+    .topo .espacamento-topo {
+        width: 80%;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .topo .espacamento-topo .logo-topo a img {
+        width: 180px;
+    }
+
+    .topo nav {
+        padding-bottom: 8px;
+    }
+
+    .topo nav a {
+        font-size: 18px;
+    }
+
+    .banner-corpo {
+        width: 100%;
+        height: 500px;
+    }
+
+    .banner-corpo .slogan-banner-corpo {
+        padding-left: 70px;
+    }
+
+    .lista-beneficios-sobre p {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .lista-beneficios-sobre ul {
+        margin-left: 20px;
+    }
+
+    .lista-beneficios-sobre ul li {
+        font-size: 25px;
+    }
+
+    .horarios-especialidades a {
+        font-size: 22px;
+    }
+
+    .cards-especialidades {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .cards-especialidades figure {
+        margin: 15px;
+        box-shadow: 10px 0 8px #909090;
+    }
+
+    .cards-especialidades figure img {
+        width: 300px;
+        margin-bottom: 10px;
+    }
+
+    .cards-especialidades figure figcaption {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .contato .descricao p {
+        margin: 20px;
+    }
+
+    .rodape .logo-rodape .dados-rodape img {
+        width: 150px;
+    }
+
+    .rodape .logo-rodape .dados-rodape p {
+        font-size: 22px;
+    }
+
+    .rodape .logo-rodape .dados-rodape {
+        line-height: 30px;
+    }
+}
+
+@media (min-width: 1025px) {
+    h1 {
+        font-size: 50px;
+        margin-left: 10px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 25px;
+    }
+
+    .descricao {
+        margin: 20px auto;
+        text-align: center;
+        width: 70%;
+    }
+
+    .topo .espacamento-topo {
+        width: 80%;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .topo .espacamento-topo .logo-topo a img {
+        width: 150px;
+    }
+
+    .topo nav a {
+        font-size: 18px;
+    }
+
+    .banner-corpo {
+        width: 100%;
+        height: 700px;
+    }
+
+    .lista-beneficios-sobre p {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: start;
+    }
+
+    .lista-beneficios-sobre ul {
+        margin-left: 35px;
+    }
+
+    .lista-beneficios-sobre ul li {
+        font-size: 20px;
+    }
+
+    .horarios-especialidades a {
+        font-size: 30px;
+    }
+
+    .cards-especialidades {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .cards-especialidades figure {
+        margin: 15px;
+        box-shadow: 10px 0 8px #909090;
+    }
+
+    .cards-especialidades figure img {
+        width: 400px;
+        margin-bottom: 10px;
+    }
+
+    .cards-especialidades figure figcaption {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .contato .descricao p {
+        margin: 20px;
+    }
+
+    .rodape .logo-rodape .dados-rodape img {
+        width: 100px;
+    }
+
+    .rodape .logo-rodape .dados-rodape p {
+        font-size: 15px;
+    }
+
+    .rodape .logo-rodape .dados-rodape {
+        line-height: 30px;
+    }
+}
